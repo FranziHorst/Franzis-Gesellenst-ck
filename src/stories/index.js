@@ -4,31 +4,46 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { text, boolean, number } from '@storybook/addon-knobs'
 
-import Todo from '../components/Todo'
+// import StyleBox from './StyleBox'
+import Headline from '../components/Headline'
+import Card from '../components/Card'
 
-import StyleBox from './StyleBox'
-
-storiesOf('Todo', module).add('default', () => (
+storiesOf('Headline', module).add('Collective Notebook', () => (
   <React.Fragment>
-    <Todo
-      text={text('Todo 1: text', 'Hello world')}
-      done={boolean('Todo 1: done', false)}
-      onToggle={action('Todo 1: onToggle')}
-      onDelete={action('Todo 1: onDelete')}
-    />
-    <StyleBox h={40} />
-    <Todo
-      text={text('Todo 2: text', 'Lorem ipsum dolor sit')}
-      done={boolean('Todo 2: done', false)}
-      onToggle={action('Todo 2: onToggle')}
-      onDelete={action('Todo 2: onDelete')}
-    />
+    <Headline>{text('Label', 'Collective Notebook')}</Headline>
   </React.Fragment>
 ))
 
-// storiesOf('ui/Button', module).add('default', () => (
+storiesOf('Card', module).add('Content Card', () => (
+  <React.Fragment>
+    <Card title="Was ist Collective Notebook? (CNB)">
+      <p>
+        Collective Notebook, oder kurz, CNB, ist eine Kreativitätstechnik in der
+        Jeder im Team ein Buch bekommt. Vorne kommt die Problemstellung zu der
+        man in den nächsten Wochen Ideen entwickeln soll. Das Buch trägt man
+        immer bei sich um jederzeit seine Ideen eintragen zu können. Damit man
+        nicht immer ein Buch mitschleppen muss, haben wir die App entwickeln
+        damit du diese Technik mit deinem Smartphone ausführen kannst.
+      </p>
+    </Card>
+  </React.Fragment>
+))
+
+// storiesOf('Todo', module).add('default', () => (
 //   <React.Fragment>
-//     <Button>{text('Label', 'Hello world')}</Button>
+//     <Todo
+//       text={text('Todo 1: text', 'Hello world')}
+//       done={boolean('Todo 1: done', false)}
+//       onToggle={action('Todo 1: onToggle')}
+//       onDelete={action('Todo 1: onDelete')}
+//     />
+//     <StyleBox h={40} />
+//     <Todo
+//       text={text('Todo 2: text', 'Lorem ipsum dolor sit')}
+//       done={boolean('Todo 2: done', false)}
+//       onToggle={action('Todo 2: onToggle')}
+//       onDelete={action('Todo 2: onDelete')}
+//     />
 //   </React.Fragment>
 // ))
 
