@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 import Home from './Home'
-import Config from './Config'
 
 const Wrapper = styled.section`
   display: grid;
@@ -35,12 +34,12 @@ const Wrapper = styled.section`
 
 export default class App extends Component {
   state = {
-    showDoneTodos: true,
+    showDoneTodos: true
   }
 
   toggleShowDoneTodos = () => {
     this.setState({
-      showDoneTodos: !this.state.showDoneTodos,
+      showDoneTodos: !this.state.showDoneTodos
     })
   }
 
@@ -53,23 +52,6 @@ export default class App extends Component {
             path="/"
             render={() => <Home showDoneTodos={this.state.showDoneTodos} />}
           />
-          <Route
-            path="/config"
-            render={() => (
-              <Config
-                showDoneTodos={this.state.showDoneTodos}
-                onToggle={this.toggleShowDoneTodos}
-              />
-            )}
-          />
-          <nav>
-            <NavLink exact activeClassName="active" to="/">
-              Home
-            </NavLink>
-            <NavLink activeClassName="active" to="/config">
-              Config
-            </NavLink>
-          </nav>
         </Wrapper>
       </Router>
     )
