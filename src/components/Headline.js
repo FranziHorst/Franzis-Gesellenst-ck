@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-export const Wrapper = styled.section`
-  font-size: 33px;
-  font-family: 'Allerta Stencil', sans-serif;
-  text-align: center;
-  display: flex;
+export const Wrapper = styled.h1`
   align-items: center;
+  display: flex;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 33px;
+  text-align: center;
 `
 
 export default class Headline extends Component {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import uid from 'uid'
 
 import styled from 'styled-components'
 import Headline from './Headline'
@@ -9,6 +8,10 @@ const Wrapper = styled.section`
   display: grid;
   grid-gap: 25px;
   grid-template-rows: 150px auto;
+
+  h3 {
+    font-family: 'Niramit', sans-serif;
+  }
 `
 
 export default class Home extends Component {
@@ -30,25 +33,24 @@ export default class Home extends Component {
         </Card>
 
         <Card title="Wie funktioniert CNB?">
+          <h3>Vorbereitungsphase:</h3>
           <p>
-            <strong>Vorbereitungsphase:</strong>
-            <br />
             1. Lege die Teilnehmerzahl fest
             <br />
             2. Definiere eine Problemstellung
             <br />
             3. Setze eine Deadline
-            <br />
-            <br />
-            <strong>Durchführungsphase:</strong>
-            <br />
+          </p>
+
+          <h3>Durchführungsphase:</h3>
+          <p>
             4. Notiere dir deine Ideen
             <br />
             5. Nutze ein gemeinsames Board zum Austausch mit Kollegen
-            <br />
-            <br />
-            <strong>Zusammenfassung:</strong>
-            <br />
+          </p>
+
+          <h3>Zusammenfassung:</h3>
+          <p>
             6. Auswertung: Zusammenfassung abgleichen
             <br />
             7. Notizen durchsehen

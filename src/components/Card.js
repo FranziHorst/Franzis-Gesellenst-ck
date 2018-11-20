@@ -6,15 +6,15 @@ export const Wrapper = styled.section`
   width: 340px;
 
   .row1 {
+    align-items: center;
     background: #df4958;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 5px 5px 10px #48484847;
+    color: white;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    border-radius: 12px 12px 0 0;
-    color: white;
     padding-left: 22px;
     padding-right: 22px;
-    box-shadow: 5px 5px 10px #48484847;
 
     h2 {
       font-family: 'Niramit', sans-serif;
@@ -25,17 +25,17 @@ export const Wrapper = styled.section`
 
   .row2 {
     background: white;
-    justify-content: center;
     border-radius: 0 0 12px 12px;
+    box-shadow: 5px 5px 10px #48484847;
+    justify-content: center;
+    padding-bottom: 22px;
     padding-left: 22px;
     padding-right: 22px;
-    padding-bottom: 22px;
-    box-shadow: 5px 5px 10px #48484847;
 
     p {
       font-family: 'Niramit', sans-serif;
-      font-weight: 200;
       font-size: 16px;
+      font-weight: 200;
     }
   }
 `
