@@ -10,14 +10,14 @@ export default createGlobalStyle`
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  align-items: center;
   background-image: url("../../images/Background-Image.jpg");
-  background-repeat: no-repeat;
   background-position-y: 150px;
+  background-repeat: no-repeat;
   background-size: cover;
   display:flex;
   justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 `

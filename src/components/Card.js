@@ -14,6 +14,7 @@ export const Wrapper = styled.section`
     color: white;
     padding-left: 22px;
     padding-right: 22px;
+    box-shadow: 5px 5px 10px #48484847;
 
     h2 {
       font-family: 'Niramit', sans-serif;
@@ -29,6 +30,7 @@ export const Wrapper = styled.section`
     padding-left: 22px;
     padding-right: 22px;
     padding-bottom: 22px;
+    box-shadow: 5px 5px 10px #48484847;
 
     p {
       font-family: 'Niramit', sans-serif;
