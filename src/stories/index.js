@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { storiesOf } from '@storybook/react'
-import { text, boolean, number } from '@storybook/addon-knobs'
+import { text } from '@storybook/addon-knobs'
 
 import Headline from '../components/Headline'
 import SimpleCard from '../components/SimpleCard'

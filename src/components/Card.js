@@ -31,7 +31,6 @@ export const Wrapper = styled.section`
     padding-bottom: 22px;
     padding-left: 22px;
     padding-right: 22px;
-    display: ${props => props.view};
     font-family: 'Niramit', sans-serif;
     font-size: 16px;
     font-weight: 200;
@@ -40,7 +39,6 @@ export const Wrapper = styled.section`
 
 export default class Card extends Component {
   render() {
-    console.log(this.props.view)
     return (
       <Wrapper>
         <header className="header">{this.props.render()}</header>

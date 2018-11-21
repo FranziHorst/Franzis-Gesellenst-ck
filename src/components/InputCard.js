@@ -41,13 +41,18 @@ export const StyledInput = styled(DatePicker)`
   margin-top: 1px;
   outline: none;
   width: 100%;
+  padding-left: 10px;
+`
+
+export const Wrapper = styled.div`
+  display: flex;
+  padding: 22px;
 `
 export const StyledHeadline3 = styled.h3`
   font-family: 'Niramit', sans-serif;
   font-size: 23px;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
 `
 
 export default class InputCard extends Component {
@@ -68,18 +73,20 @@ export default class InputCard extends Component {
   render() {
     return (
       <Card
-        view="flex"
         render={() => (
           <StyledTextarea placeholder="type your Problem here..." />
         )}
       >
-        <StyledHeadline3>Deadline:</StyledHeadline3>
-        <StyledInput
-          withPortal
-          dateFormat="dd/MM/yyyy"
-          selected={this.state.startDate}
-          onChange={this.handleChange}
-        />
+        <Wrapper>
+          <StyledHeadline3>Deadline:</StyledHeadline3>
+          <StyledInput
+            withPortal
+            dateFormat="dd/MM/yyyy"
+            selected={this.state.startDate}
+            onChange={this.handleChange}
+            minDate={new Date()}
+          />
+        </Wrapper>
       </Card>
     )
   }
