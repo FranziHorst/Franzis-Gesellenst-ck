@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 //import styled from 'styled-components'
 
-import Home from './Home'
+import Project from './Project'
 
 export default class App extends Component {
   render() {
-    return <Home />
+    return <Project />
   }
 }

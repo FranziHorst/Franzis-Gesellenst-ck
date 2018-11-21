@@ -2,12 +2,11 @@ import React, { Component } from 'react'
 
 import styled from 'styled-components'
 import Headline from './Headline'
-import Card from './Card'
+import SimpleCard from './SimpleCard'
 
 const Wrapper = styled.section`
   display: grid;
   grid-gap: 25px;
-  grid-template-rows: 150px auto;
 
   h3 {
     font-family: 'Niramit', sans-serif;
@@ -20,7 +19,7 @@ export default class Home extends Component {
       <Wrapper>
         <Headline text="Collective Notebook" />
 
-        <Card title="Was ist Collective Notebook? (CNB)">
+        <SimpleCard title="Was ist Collective Notebook? (CNB)">
           <p>
             Collective Notebook, oder kurz, CNB, ist eine Kreativitätstechnik in
             der Jeder im Team ein Buch bekommt. Vorne kommt die Problemstellung
@@ -30,9 +29,9 @@ export default class Home extends Component {
             die App entwickeln damit du diese Technik mit deinem Smartphone
             ausführen kannst.
           </p>
-        </Card>
+        </SimpleCard>
 
-        <Card title="Wie funktioniert CNB?">
+        <SimpleCard title="Wie funktioniert CNB?">
           <h3>Vorbereitungsphase:</h3>
           <p>
             1. Lege die Teilnehmerzahl fest
@@ -59,7 +58,7 @@ export default class Home extends Component {
             <br />
             9. gemeinsame Konzepterstellung
           </p>
-        </Card>
+        </SimpleCard>
       </Wrapper>
     )
   }

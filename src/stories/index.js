@@ -4,7 +4,9 @@ import { storiesOf } from '@storybook/react'
 import { text, boolean, number } from '@storybook/addon-knobs'
 
 import Headline from '../components/Headline'
-import Card from '../components/Card'
+import SimpleCard from '../components/SimpleCard'
+import InputCard from '../components/InputCard'
+import IdeaTextarea from '../components/IdeaTextarea'
 
 storiesOf('Headline', module).add('Collective Notebook', () => (
   <React.Fragment>
@@ -12,9 +14,9 @@ storiesOf('Headline', module).add('Collective Notebook', () => (
   </React.Fragment>
 ))
 
-storiesOf('Card', module).add('Content Card', () => (
+storiesOf('Content Card', module).add('Content Card', () => (
   <React.Fragment>
-    <Card title={text('Label', 'Was ist Collective Notebook? (CNB)')}>
+    <SimpleCard title={text('Label', 'Was ist Collective Notebook? (CNB)')}>
       <p>
         Collective Notebook, oder kurz, CNB, ist eine Kreativitätstechnik in der
         Jeder im Team ein Buch bekommt. Vorne kommt die Problemstellung zu der
@@ -23,6 +25,18 @@ storiesOf('Card', module).add('Content Card', () => (
         nicht immer ein Buch mitschleppen muss, haben wir die App entwickeln
         damit du diese Technik mit deinem Smartphone ausführen kannst.
       </p>
-    </Card>
+    </SimpleCard>
+  </React.Fragment>
+))
+
+storiesOf('Input Card', module).add('Content Card', () => (
+  <React.Fragment>
+    <InputCard />
+  </React.Fragment>
+))
+
+storiesOf('Idea Textarea', module).add('Textarea', () => (
+  <React.Fragment>
+    <IdeaTextarea />
   </React.Fragment>
 ))
