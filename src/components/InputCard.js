@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Textarea from 'react-textarea-autosize'
 import Card from './Card'
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 
 export const StyledTextarea = styled(Textarea)`
   background: none;
@@ -32,15 +34,13 @@ export const StyledTextarea = styled(Textarea)`
   }
 `
 
-export const StyledInput = styled.input`
-  &[type='date'] {
-    border: 0;
-    font-family: 'Niramit', sans-serif;
-    font-size: 20px;
-    margin-top: 1px;
-    outline: none;
-    width: 100%;
-  }
+export const StyledInput = styled(DatePicker)`
+  border: 0;
+  font-family: 'Niramit', sans-serif;
+  font-size: 20px;
+  margin-top: 1px;
+  outline: none;
+  width: 100%;
 `
 export const StyledHeadline3 = styled.h3`
   font-family: 'Niramit', sans-serif;
@@ -51,15 +51,35 @@ export const StyledHeadline3 = styled.h3`
 `
 
 export default class InputCard extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      startDate: new Date()
+    }
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(date) {
+    this.setState({
+      startDate: date
+    })
+  }
+
   render() {
     return (
       <Card
+        view="flex"
         render={() => (
           <StyledTextarea placeholder="type your Problem here..." />
         )}
       >
         <StyledHeadline3>Deadline:</StyledHeadline3>
-        <StyledInput type="date" placeholder="20.10.2018" />
+        <StyledInput
+          withPortal
+          dateFormat="dd/MM/yyyy"
+          selected={this.state.startDate}
+          onChange={this.handleChange}
+        />
       </Card>
     )
   }
