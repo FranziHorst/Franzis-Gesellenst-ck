@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   display: grid;
-  width: 340px;
+  min-width: 150px;
+  margin: 0 20px;
 
   .header {
     align-items: center;

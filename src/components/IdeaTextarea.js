@@ -10,7 +10,7 @@ export const StyledTextarea = styled(Textarea)`
   font-family: 'Niramit', sans-serif;
   font-size: 14px;
   min-height: 400px;
-  min-width: 100px;
+  margin: 0 20px;
   outline: none;
   padding: 10px;
 
