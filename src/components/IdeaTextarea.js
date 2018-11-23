@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Textarea from 'react-textarea-autosize'
+import PropTypes from 'prop-types'
 
 export const StyledTextarea = styled(Textarea)`
   background: white;
@@ -37,6 +38,14 @@ export const StyledTextarea = styled(Textarea)`
 `
 
 export default class IdeaTextarea extends Component {
+  static propTypes = {
+    placeholder: PropTypes.string.isRequired
+  }
+
+  static defaultProps = {
+    placeholder: 'Add your stuff here'
+  }
+
   render() {
     return <StyledTextarea placeholder="type your ideas here..." />
   }

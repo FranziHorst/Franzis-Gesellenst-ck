@@ -14,39 +14,64 @@ const Wrapper = styled.section`
 `
 
 export default class Project extends Component {
-  state = {
-    job: this.load()
-  }
-  addToDo = () => {
-    this.setState({
-      job: 'Hello world'
-    })
+  state = this.load()
+
+  handleDateChange = date => {
+    this.setState(
+      {
+        startDate: date
+      },
+      oldState => {
+        this.save()
+      }
+    )
   }
 
   handleChange = event => {
-    this.setState({ [event.target.name + 'Input']: event.target.value })
+    this.setState(
+      {
+        inputs: {
+          ...this.state.inputs,
+          [event.target.name + 'Input']: event.target.value
+        }
+      },
+      oldState => {
+        this.save()
+      }
+    )
   }
 
   save() {
-    localStorage.setItem('note-app--input', JSON.stringify(this.state.job))
+    localStorage.setItem('note-app--date', JSON.stringify(this.state))
   }
 
   load() {
+    const defaultState = {
+      inputs: [],
+      startDate: new Date()
+    }
+
     try {
-      return JSON.parse(localStorage.getItem('note-app--input')) || []
+      const data =
+        JSON.parse(localStorage.getItem('note-app--date')) || defaultState
+      data.startDate = new Date(data.startDate)
+      return data
     } catch (err) {
-      return []
+      return defaultState
     }
   }
 
   render() {
-    this.save()
-    const { job } = this.state
     return (
       <Wrapper>
-        <span onClick={this.addToDo}>{job}</span>
         <Headline text="Collective Notebook" />
-        <InputCard />
+        <InputCard
+          startDate={this.state.startDate}
+          handleDateChange={this.handleDateChange}
+          handleChange={this.handleChange}
+          inputValue={this.state.inputs.problemTextareaInput}
+          dateValue={this.state.inputs.startDate}
+        />
         <IdeaTextarea />
       </Wrapper>
     )

@@ -22,18 +22,17 @@ const ArrowIcon = (
 export default class MyButton extends Component {
   render() {
     return (
-      <React.Fragment>
-        <StyledButton
-          className="ButtonEl"
-          variant="contained"
-          color="secondary"
-          component={Link}
-          to="/project"
-        >
-          {this.props.children}
-          {ArrowIcon}
-        </StyledButton>
-      </React.Fragment>
+      <StyledButton
+        data-cy="Specialbutton"
+        className="ButtonEl"
+        variant="contained"
+        color="secondary"
+        component={Link}
+        to="/project"
+      >
+        {this.props.children}
+        {ArrowIcon}
+      </StyledButton>
     )
   }
 }

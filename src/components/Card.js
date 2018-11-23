@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 export const Wrapper = styled.section`
   display: grid;
@@ -39,6 +40,10 @@ export const Wrapper = styled.section`
 `
 
 export default class Card extends Component {
+  static propTypes = {
+    render: PropTypes.func.isRequired,
+    children: PropTypes.node.isRequired
+  }
   render() {
     return (
       <Wrapper>
