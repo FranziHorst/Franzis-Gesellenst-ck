@@ -72,7 +72,10 @@ export default class Project extends Component {
           inputValue={this.state.inputs.problemTextareaInput}
           dateValue={this.state.inputs.startDate}
         />
-        <IdeaTextarea />
+        <IdeaTextarea
+          handleChange={this.handleChange}
+          inputIdeaValue={this.state.inputs.ideaTextareaInput}
+        />
       </Wrapper>
     )
   }

@@ -47,6 +47,13 @@ export default class IdeaTextarea extends Component {
   }
 
   render() {
-    return <StyledTextarea placeholder="type your ideas here..." />
+    return (
+      <StyledTextarea
+        name="ideaTextarea"
+        onChange={this.props.handleChange}
+        value={this.props.inputIdeaValue}
+        placeholder="type your ideas here..."
+      />
+    )
   }
 }
