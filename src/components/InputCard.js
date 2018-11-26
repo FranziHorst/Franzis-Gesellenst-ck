@@ -57,13 +57,21 @@ export const StyledHeadline3 = styled.h3`
 
 export default class InputCard extends Component {
   render() {
+    const {
+      inputValue,
+      handleChange,
+      dateValue,
+      startDate,
+      handleDateChange
+    } = this.props
+
     return (
       <Card
         render={() => (
           <StyledTextarea
-            value={this.props.inputValue}
+            value={inputValue}
             name="problemTextarea"
-            onChange={this.props.handleChange}
+            onChange={handleChange}
             placeholder="type your Problem here..."
           />
         )}
@@ -71,11 +79,11 @@ export default class InputCard extends Component {
         <Wrapper>
           <StyledHeadline3>Deadline:</StyledHeadline3>
           <StyledInput
-            value={this.props.dateValue}
+            value={dateValue}
             withPortal
             dateFormat="dd/MM/yyyy"
-            selected={this.props.startDate}
-            onChange={this.props.handleDateChange}
+            selected={startDate}
+            onChange={handleDateChange}
             minDate={new Date()}
           />
         </Wrapper>

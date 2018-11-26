@@ -6,12 +6,12 @@ import Project from './Project'
 
 export default class App extends Component {
   state = {
-    showDoneTodos: false
+    showProject: false
   }
 
-  toggleShowDonetodos = () => {
+  toggleShowProject = () => {
     this.setState({
-      showDoneTodos: !this.state.showDoneTodos
+      showProject: !this.state.showProject
     })
   }
 
@@ -22,15 +22,15 @@ export default class App extends Component {
           <Route
             exact
             path="/"
-            render={() => <Home showDoneTodos={this.state.showDoneTodos} />}
+            render={() => <Home showProject={this.state.showProject} />}
           />
 
           <Route
             path="/project"
             render={() => (
               <Project
-                showDoneTodos={this.state.showDoneTodos}
-                onToggle={this.toggleShowDonetodos}
+                showProject={this.state.showProject}
+                onToggle={this.toggleShowProject}
               />
             )}
           />

@@ -1,12 +1,13 @@
 import React from 'react'
 
 import { storiesOf } from '@storybook/react'
-import { text } from '@storybook/addon-knobs'
+import { text, action } from '@storybook/addon-knobs'
 
 import Headline from '../components/Headline'
 import SimpleCard from '../components/SimpleCard'
 import InputCard from '../components/InputCard'
 import IdeaTextarea from '../components/IdeaTextarea'
+import Button from '../components/Button'
 
 storiesOf('Headline', module).add('Collective Notebook', () => (
   <React.Fragment>
@@ -38,5 +39,10 @@ storiesOf('Input Card', module).add('Content Card', () => (
 storiesOf('Idea Textarea', module).add('Textarea', () => (
   <React.Fragment>
     <IdeaTextarea />
+  </React.Fragment>
+))
+storiesOf('Button Projekt erstellen', module).add('Button', () => (
+  <React.Fragment>
+    <Button onClick={action('onClick')} />
   </React.Fragment>
 ))
