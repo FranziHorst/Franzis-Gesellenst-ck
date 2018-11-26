@@ -14,6 +14,6 @@ describe('App', () => {
   it('has a p', () => {
     cy.get('p').should('have.length', 4)
 
-    cy.get('[data-cy="Specialbutton"]').click()
+    cy.get('[data-cy="specialbutton"]').click()
   })
 })
