@@ -62,6 +62,11 @@ export default class Project extends Component {
   }
 
   render() {
+    const {
+      problemTextareaInput,
+      startDate,
+      ideaTextareaInput
+    } = this.state.inputs
     return (
       <Wrapper>
         <Headline text="Collective Notebook" />
@@ -69,12 +74,12 @@ export default class Project extends Component {
           startDate={this.state.startDate}
           handleDateChange={this.handleDateChange}
           handleChange={this.handleChange}
-          inputValue={this.state.inputs.problemTextareaInput}
-          dateValue={this.state.inputs.startDate}
+          inputValue={problemTextareaInput}
+          dateValue={startDate}
         />
         <IdeaTextarea
           handleChange={this.handleChange}
-          inputIdeaValue={this.state.inputs.ideaTextareaInput}
+          inputIdeaValue={ideaTextareaInput}
         />
       </Wrapper>
     )

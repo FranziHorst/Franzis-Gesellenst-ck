@@ -80,6 +80,7 @@ export default class InputCard extends Component {
           <StyledHeadline3>Deadline:</StyledHeadline3>
           <StyledInput
             value={dateValue}
+            disabled={false}
             withPortal
             dateFormat="dd/MM/yyyy"
             selected={startDate}

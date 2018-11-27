@@ -19,7 +19,7 @@ export const StyledTextarea = styled(Textarea)`
     box-shadow: 0 0 10px #ffbf00;
   }
 
-  ::-webkit-input-placeholder {
+  :-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #b2b2b2;
   }

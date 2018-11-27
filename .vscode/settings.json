@@ -1,7 +1,7 @@
 {
   "materialTheme.accent": "Purple",
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#d311da",
-    "titleBar.inactiveBackground": "#FF2C70CC"
+    "titleBar.activeBackground": "#df16dfcc",
+    "titleBar.inactiveBackground": "#0d85a3"
   }
 }

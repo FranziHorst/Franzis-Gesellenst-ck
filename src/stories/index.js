@@ -41,8 +41,3 @@ storiesOf('Idea Textarea', module).add('Textarea', () => (
     <IdeaTextarea />
   </React.Fragment>
 ))
-storiesOf('Button Projekt erstellen', module).add('Button', () => (
-  <React.Fragment>
-    <Button onClick={action('onClick')} />
-  </React.Fragment>
-))
