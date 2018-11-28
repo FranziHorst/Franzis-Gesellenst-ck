@@ -5,11 +5,11 @@ import PropTypes from 'prop-types'
 export const Wrapper = styled.section`
   display: grid;
   min-width: 150px;
-  margin: 0 20px;
+  margin: 22px;
 
   .header {
     align-items: center;
-    background: #df4958;
+    background: #6ccfdc;
     border-radius: 12px 12px 0 0;
     box-shadow: 5px 5px 10px #48484847;
     color: white;
@@ -30,7 +30,7 @@ export const Wrapper = styled.section`
     border-radius: 0 0 12px 12px;
     box-shadow: 5px 5px 10px #48484847;
     justify-content: center;
-    padding-bottom: 22px;
+    padding-bottom: 10px;
     padding-left: 22px;
     padding-right: 22px;
     font-family: 'Niramit', sans-serif;

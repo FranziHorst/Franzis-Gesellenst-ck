@@ -8,11 +8,15 @@ import Button from '@material-ui/core/Button'
 export const StyledButton = styled(Button)`
   font-family: 'Niramit', sans-serif !important;
   font-size: 14px !important;
-  background: #ffbf00 !important;
+  background: #ffc200 !important;
   border-radius: 12px !important;
   font-weight: 600 !important;
-  border: 0 !important!;
+  border: 0 !important;
   margin: 5px !important;
+`
+
+export const Span = styled.span`
+  margin-right: 5px;
 `
 
 const ArrowIcon = (
@@ -30,8 +34,7 @@ export default class MyButton extends Component {
         component={Link}
         to="/project"
       >
-        {this.props.children}
-        {ArrowIcon}
+        <Span>{this.props.children} </Span> {ArrowIcon}
       </StyledButton>
     )
   }

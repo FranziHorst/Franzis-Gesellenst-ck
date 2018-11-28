@@ -46,7 +46,8 @@ export const StyledInput = styled(DatePicker)`
 
 export const Wrapper = styled.div`
   display: flex;
-  padding: 22px;
+  margin-bottom: 14px;
+  margin-top: 14px;
 `
 export const StyledHeadline3 = styled.h3`
   font-family: 'Niramit', sans-serif;

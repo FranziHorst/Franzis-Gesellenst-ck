@@ -7,16 +7,10 @@ import Button from './Button'
 
 const Wrapper = styled.section`
   display: grid;
-  grid-gap: 25px;
 
   h3 {
     font-family: 'Niramit', sans-serif;
   }
-`
-
-export const HeadlineWrapper = styled.section`
-  justify-content: center;
-  display: flex;
 `
 
 export const ButtonWrapper = styled.section`
@@ -28,11 +22,10 @@ export default class Home extends Component {
   render() {
     return (
       <Wrapper>
-        <HeadlineWrapper>
-          <Headline text="Collective Notebook" />
-        </HeadlineWrapper>
+        <Headline text="Collective Notebook" />
+
         <ButtonWrapper>
-          <Button>Projekt erstellen</Button>
+          <Button>Projekt erstellen </Button>
         </ButtonWrapper>
         <SimpleCard title="Was ist Collective Notebook? (CNB)">
           <p>

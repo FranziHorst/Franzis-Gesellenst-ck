@@ -6,10 +6,7 @@ import Headline from './Headline'
 
 const Wrapper = styled.section`
   display: grid;
-  grid-gap: 25px;
-
-  .square {
-    color: yellow;
+  
   }
 `
 
@@ -70,6 +67,7 @@ export default class Project extends Component {
     return (
       <Wrapper>
         <Headline text="Collective Notebook" />
+
         <InputCard
           startDate={this.state.startDate}
           handleDateChange={this.handleDateChange}

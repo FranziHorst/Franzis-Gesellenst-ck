@@ -13,8 +13,7 @@ body {
   align-items: center;
   background-attachment: fixed;
   background-image: url("../../images/Background-Image.jpg");
-  background-position-y: 150px;
-  background-repeat: no-repeat;
+ background-repeat: no-repeat;
   background-size: cover;
   display:flex;
   justify-content: center;
