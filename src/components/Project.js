@@ -6,8 +6,6 @@ import Headline from './Headline'
 
 const Wrapper = styled.section`
   display: grid;
-  
-  }
 `
 
 export default class Project extends Component {
