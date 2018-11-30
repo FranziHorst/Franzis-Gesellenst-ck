@@ -70,6 +70,7 @@ export default class InputCard extends Component {
       <Card
         render={() => (
           <StyledTextarea
+            disabled={false}
             value={inputValue}
             name="problemTextarea"
             onChange={handleChange}

@@ -50,7 +50,7 @@ export default class IdeaTextarea extends Component {
     const { handleChange, inputIdeaValue } = this.props
     return (
       <StyledTextarea
-        disabled={true}
+        disabled={false}
         name="ideaTextarea"
         onChange={handleChange}
         value={inputIdeaValue}
