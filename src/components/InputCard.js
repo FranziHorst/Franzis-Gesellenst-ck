@@ -42,6 +42,9 @@ export const StyledInput = styled(DatePicker)`
   outline: none;
   width: 100%;
   padding-left: 10px;
+  &:disabled {
+    background: white;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -70,7 +73,7 @@ export default class InputCard extends Component {
       <Card
         render={() => (
           <StyledTextarea
-            disabled={false}
+            disabled={this.props.isDisabled}
             value={inputValue}
             name="problemTextarea"
             onChange={handleChange}
@@ -82,7 +85,7 @@ export default class InputCard extends Component {
           <StyledHeadline3>Deadline:</StyledHeadline3>
           <StyledInput
             value={dateValue}
-            disabled={false}
+            disabled={this.props.isDisabled}
             withPortal
             dateFormat="dd/MM/yyyy"
             selected={startDate}

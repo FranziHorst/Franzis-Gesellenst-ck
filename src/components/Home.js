@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Headline from './Headline'
 import SimpleCard from './SimpleCard'
-import Button from './Button'
+import RoutesButton from './RoutesButton'
 
 const Wrapper = styled.section`
   display: grid;
@@ -25,7 +25,7 @@ export default class Home extends Component {
         <Headline text="Collective Notebook" />
 
         <ButtonWrapper>
-          <Button>Projekt erstellen </Button>
+          <RoutesButton>Projekt erstellen </RoutesButton>
         </ButtonWrapper>
         <SimpleCard title="Was ist Collective Notebook? (CNB)">
           <p>

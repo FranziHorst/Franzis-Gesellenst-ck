@@ -7,7 +7,7 @@ import Headline from '../components/Headline'
 import SimpleCard from '../components/SimpleCard'
 import InputCard from '../components/InputCard'
 import IdeaTextarea from '../components/IdeaTextarea'
-import Button from '../components/Button'
+import RoutesButton from '../components/RoutesButton'
 
 storiesOf('Headline', module).add('Collective Notebook', () => (
   <React.Fragment>

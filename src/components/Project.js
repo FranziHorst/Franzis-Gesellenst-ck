@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import InputCard from '../components/InputCard'
 import IdeaTextarea from './IdeaTextarea'
 import Headline from './Headline'
+import ToggleButton from './ToggleButton'
 
 const Wrapper = styled.section`
   display: grid;
@@ -43,7 +44,8 @@ export default class Project extends Component {
   load() {
     const defaultState = {
       inputs: [],
-      startDate: new Date()
+      startDate: new Date(),
+      isDisabled: false
     }
 
     try {
@@ -72,10 +74,15 @@ export default class Project extends Component {
           handleChange={this.handleChange}
           inputValue={problemTextareaInput}
           dateValue={startDate}
+          isDisabled={this.state.isDisabled}
         />
         <IdeaTextarea
           handleChange={this.handleChange}
           inputIdeaValue={ideaTextareaInput}
+          isDisabled={this.state.isDisabled}
+        />
+        <ToggleButton
+          onClick={() => this.setState({ isDisabled: !this.state.isDisabled })}
         />
       </Wrapper>
     )
