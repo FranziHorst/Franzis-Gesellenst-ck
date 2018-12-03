@@ -20,24 +20,15 @@ export const Span = styled.span`
 `
 
 export default class ToggleButton extends Component {
-  state = { isToggleOn: true }
-
-  handleClick = () => {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }))
-    this.props.onClick()
-  }
-
   render() {
     return (
       <StyledButton
-        className={this.state.isToggleOn ? '' : 'selected'}
+        className={this.props.isDisabled ? 'selected' : ''}
         variant="contained"
         color="secondary"
-        onClick={this.handleClick}
+        onClick={this.props.onClick}
       >
-        {this.state.isToggleOn ? 'close project' : 'project is closed'}
+        {this.props.isDisabled ? 'project is closed' : 'close project'}
       </StyledButton>
     )
   }

@@ -13,15 +13,14 @@ const Wrapper = styled.section`
 export default class Project extends Component {
   state = this.load()
 
+  componentDidUpdate() {
+    this.save()
+  }
+
   handleDateChange = date => {
-    this.setState(
-      {
-        startDate: date
-      },
-      oldState => {
-        this.save()
-      }
-    )
+    this.setState({
+      startDate: date
+    })
   }
 
   handleChange = event => {
@@ -83,6 +82,7 @@ export default class Project extends Component {
           isDisabled={this.state.isDisabled}
         />
         <ToggleButton
+          isDisabled={this.state.isDisabled}
           onClick={() => this.setState({ isDisabled: !this.state.isDisabled })}
         />
       </Wrapper>
