@@ -36,14 +36,17 @@ export const StyledTextarea = styled(Textarea)`
 
 export const StyledInput = styled(DatePicker)`
   border: 0;
+  color: #42d2de;
   font-family: 'Niramit', sans-serif;
   font-size: 20px;
   margin-top: 1px;
   outline: none;
-  width: 100%;
   padding-left: 10px;
+  width: 100%;
   &:disabled {
     background: white;
+    color: grey;
+    margin-top: 1px;
   }
 `
 

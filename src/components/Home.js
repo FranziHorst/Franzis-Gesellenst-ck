@@ -7,6 +7,7 @@ import RoutesButton from './RoutesButton'
 
 const Wrapper = styled.section`
   display: grid;
+  grid-gap: 20px;
 
   h3 {
     font-family: 'Niramit', sans-serif;
@@ -14,8 +15,9 @@ const Wrapper = styled.section`
 `
 
 export const ButtonWrapper = styled.section`
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
 `
 
 export default class Home extends Component {

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 export const Wrapper = styled.section`
   display: grid;
   min-width: 150px;
-  margin: 22px;
+  margin-top: 20px;
 
   .header {
     align-items: center;
@@ -15,8 +15,7 @@ export const Wrapper = styled.section`
     color: white;
     display: flex;
     justify-content: flex-start;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 0 22px 0 22px;
 
     h2 {
       font-family: 'Niramit', sans-serif;
@@ -29,13 +28,11 @@ export const Wrapper = styled.section`
     background: white;
     border-radius: 0 0 12px 12px;
     box-shadow: 5px 5px 10px #48484847;
-    justify-content: center;
-    padding-bottom: 10px;
-    padding-left: 22px;
-    padding-right: 22px;
     font-family: 'Niramit', sans-serif;
     font-size: 16px;
     font-weight: 200;
+    justify-content: center;
+    padding: 0 22px 10px 22px;
   }
 `
 

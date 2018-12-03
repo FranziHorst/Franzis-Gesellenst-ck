@@ -11,12 +11,17 @@ export const StyledTextarea = styled(Textarea)`
   font-family: 'Niramit', sans-serif;
   font-size: 16px;
   min-height: 400px;
-  margin: 22px;
   outline: none;
   padding: 10px;
 
   &:focus {
     box-shadow: 0 0 10px #ffbf00;
+  }
+  &:disabled {
+    background: black;
+    border: none;
+    color: #ffffffa6;
+    opacity: 0.6;
   }
 
   :-webkit-input-placeholder {

@@ -12,12 +12,12 @@ export default createGlobalStyle`
 body {
   align-items: center;
   background-attachment: fixed;
-  background-image: url("../../images/Background-Image.jpg");
- background-repeat: no-repeat;
+  background-image: url("../../images/Background-Image2.jpg");
   background-size: cover;
   display:flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 22px;
+ background-repeat: no-repeat;
 }
 `

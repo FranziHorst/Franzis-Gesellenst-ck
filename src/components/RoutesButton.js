@@ -6,12 +6,12 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Button from '@material-ui/core/Button'
 
 export const StyledButton = styled(Button)`
-  font-family: 'Niramit', sans-serif !important;
-  font-size: 14px !important;
   background: #ffc200 !important;
   border-radius: 12px !important;
-  font-weight: 600 !important;
   border: 0 !important;
+  font-family: 'Niramit', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
   margin: 5px !important;
 `
 

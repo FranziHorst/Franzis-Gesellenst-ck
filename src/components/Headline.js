@@ -10,13 +10,12 @@ export const Headline1 = styled.h1`
 `
 
 export const HeadlineWrapper = styled.section`
-  justify-content: center;
-  display: flex;
   align-items: center;
-  margin: 22px;
-  border-radius: 12px;
   background: linear-gradient(10deg, #fe6b8b 30%, #ff8e53 85%);
+  border-radius: 12px;
   box-shadow: 5px 5px 10px #3333336b;
+  display: flex;
+  justify-content: center;
 `
 
 export default class Headline extends Component {

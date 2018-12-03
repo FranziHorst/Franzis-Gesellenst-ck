@@ -7,6 +7,7 @@ import ToggleButton from './ToggleButton'
 
 const Wrapper = styled.section`
   display: grid;
+  grid-gap: 20px;
 `
 
 export default class Project extends Component {
