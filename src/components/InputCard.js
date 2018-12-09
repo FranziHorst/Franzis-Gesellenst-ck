@@ -52,6 +52,8 @@ export const StyledInput = styled(DatePicker)`
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 14px;
   margin-top: 14px;
 `

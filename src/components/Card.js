@@ -21,6 +21,7 @@ export const Wrapper = styled.section`
       font-family: 'Niramit', sans-serif;
       font-size: 16px;
       font-weight: 700;
+      margin: 22px 0;
     }
   }
 

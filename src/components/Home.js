@@ -11,6 +11,7 @@ const Wrapper = styled.section`
 
   h3 {
     font-family: 'Niramit', sans-serif;
+    font-size: 18px;
   }
 `
 
