@@ -2,6 +2,16 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createProject } from '../../store/actions/projectActions'
 import { Redirect } from 'react-router-dom'
+import styled from 'styled-components'
+import InputCard from './InputCard'
+import IdeaTextarea from './IdeaTextarea'
+import Headline from './Headline'
+import ToggleButton from './ToggleButton'
+
+const Wrapper = styled.section`
+  display: grid;
+  grid-gap: 20px;
+`
 
 class CreateProject extends Component {
   state = {
@@ -42,6 +52,28 @@ class CreateProject extends Component {
             <button className="btn pink lighten-1">Create</button>
           </div>
         </form>
+
+        <Headline text="Collective Notebook" />
+
+        <InputCard
+        // startDate={this.state.startDate}
+        // handleDateChange={this.handleDateChange}
+        // handleChange={this.handleChange}
+        // inputValue={problemTextareaInput}
+        // dateValue={startDate}
+        // isDisabled={this.state.isDisabled}
+        />
+        <IdeaTextarea
+        // handleChange={this.handleChange}
+        // inputIdeaValue={ideaTextareaInput}
+        // isDisabled={this.state.isDisabled}
+        />
+        <ToggleButton
+        // isDisabled={this.state.isDisabled}
+        // onClick={() =>
+        //   this.setState({ isDisabled: !this.state.isDisabled })
+        // }
+        />
       </div>
     )
   }

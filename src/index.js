@@ -1,10 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import * as serviceWorker from './serviceWorker'
-
-import App from './components/App'
-import GlobalStyle from './components/GlobalStyle'
-
 // ReactDOM.render(
 //   <React.Fragment>
 //     <App />
@@ -17,9 +10,15 @@ import GlobalStyle from './components/GlobalStyle'
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
-import './index.css'
+
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import * as serviceWorker from './serviceWorker'
+import App from './App'
+import GlobalStyle from './components/projects/GlobalStyle'
 import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from './store/reducers/rootReducer'
 import { Provider } from 'react-redux'
@@ -27,6 +26,7 @@ import thunk from 'redux-thunk'
 import { reduxFirestore, getFirestore } from 'redux-firestore'
 import { reactReduxFirebase, getFirebase } from 'react-redux-firebase'
 import fbConfig from './config/fbConfig'
+import './index.css'
 
 const store = createStore(
   rootReducer,
@@ -37,7 +37,7 @@ const store = createStore(
       useFirestoreForProfile: true,
       attachAuthIsReady: true
     }),
-    reduxFirestore(fbConfig) // redux bindings for firestore
+    reduxFirestore(fbConfig)
   )
 )
 

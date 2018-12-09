@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import InputCard from '../components/InputCard'
+import InputCard from './InputCard'
 import IdeaTextarea from './IdeaTextarea'
 import Headline from './Headline'
 import ToggleButton from './ToggleButton'
