@@ -17,7 +17,9 @@ const Navbar = props => {
     <nav className="nav-wrapper grey darken-3">
       <div className="container">
         <Link to="/" className="brand-logo">
-          MarioPlan
+          Home
+          {/* <img src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" />
+          <img src="./home2.png" /> */}
         </Link>
         {links}
       </div>

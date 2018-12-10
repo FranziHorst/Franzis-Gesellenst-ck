@@ -4,6 +4,9 @@ import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
 import moment from 'moment'
+import Project from './Project'
+
+import ToggleButton from './ToggleButton'
 
 const ProjectDetails = props => {
   const { project, auth } = props
@@ -23,6 +26,8 @@ const ProjectDetails = props => {
             <div>{moment(project.createdAt.toDate()).calendar()}</div>
           </div>
         </div>
+
+        <Project />
       </div>
     )
   } else {

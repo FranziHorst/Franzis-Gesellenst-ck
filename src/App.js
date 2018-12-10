@@ -16,7 +16,7 @@ export default class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Switch>
-            <Route exact path="/" render={() => <Home />} />
+            {/* <Route exact path="/" render={() => <Home />} /> */}
             <Route path="/project" render={() => <Project />} />
             <Route exact path="/" component={Dashboard} />
             <Route path="/project/:id" component={ProjectDetails} />
