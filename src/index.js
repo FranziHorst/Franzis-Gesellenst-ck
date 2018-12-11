@@ -1,19 +1,3 @@
-// ReactDOM.render(
-//   <React.Fragment>
-//     <App />
-//     <GlobalStyle />
-//   </React.Fragment>,
-//   document.getElementById('root')
-// )
-
-// serviceWorker.register()
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-
-// import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'

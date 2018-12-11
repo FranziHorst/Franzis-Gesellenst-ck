@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Headline from './Headline'
 import SimpleCard from './SimpleCard'
-import RoutesButton from './RoutesButton'
+// import RoutesButton from './RoutesButton'
 
 const Wrapper = styled.section`
   display: grid;
@@ -15,11 +15,11 @@ const Wrapper = styled.section`
   }
 `
 
-export const ButtonWrapper = styled.section`
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-`
+// export const ButtonWrapper = styled.section`
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 20px;
+// `
 
 export default class Home extends Component {
   render() {
@@ -27,9 +27,9 @@ export default class Home extends Component {
       <Wrapper>
         <Headline text="Collective Notebook" />
 
-        <ButtonWrapper>
+        {/* <ButtonWrapper>
           <RoutesButton>Projekt erstellen </RoutesButton>
-        </ButtonWrapper>
+        </ButtonWrapper> */}
         <SimpleCard title="Was ist Collective Notebook? (CNB)">
           <p>
             Collective Notebook, oder kurz, CNB, ist eine Kreativitätstechnik in

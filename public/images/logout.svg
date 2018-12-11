@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="36px" viewBox="0 0 41 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>#027</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons-copy" transform="translate(-254.000000, -60.000000)">
+            <g id="icons" transform="translate(44.000000, 16.000000)">
+                <g id="#027" transform="translate(230.000000, 62.000000) rotate(90.000000) translate(-230.000000, -62.000000) translate(206.000000, 38.000000)">
+                    <rect id="矩形" fill-rule="nonzero" x="1.42108547e-14" y="0" width="48" height="48"></rect>
+                    <path d="M40,22 L40,36.9990698 C40,39.7568283 37.7625407,41.9930478 35,41.9938065 L13,41.9998486 C10.2385763,42.000607 8,39.7650473 8,37.0056633 L8,22" id="矩形" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="椭圆形" fill="#FF9F00" fill-rule="nonzero" cx="24" cy="32" r="2"></circle>
+                    <polyline id="直线" stroke="#FE6B8B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="14 13 24 5 34 13"></polyline>
+                    <path d="M24,5.5 L24,25.5" id="直线" stroke="#FE6B8B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

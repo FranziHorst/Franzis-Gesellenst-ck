@@ -3,6 +3,16 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signUp } from '../../store/actions/authActions'
 
+import styled from 'styled-components'
+
+const Wrapper = styled.section`
+  background: white;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #48484847;
+  padding: 0 22px 10px 22px;
+  min-width: 370px;
+`
+
 class SignUp extends Component {
   state = {
     email: '',
@@ -23,7 +33,7 @@ class SignUp extends Component {
     const { auth, authError } = this.props
     if (auth.uid) return <Redirect to="/" />
     return (
-      <div className="container">
+      <Wrapper>
         <form className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Sign Up</h5>
           <div className="input-field">
@@ -49,7 +59,7 @@ class SignUp extends Component {
             </div>
           </div>
         </form>
-      </div>
+      </Wrapper>
     )
   }
 }

@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import InputCard from './InputCard'
 import IdeaTextarea from './IdeaTextarea'
-import Headline from './Headline'
 import ToggleButton from './ToggleButton'
 
 const Wrapper = styled.section`
   display: grid;
   grid-gap: 20px;
+  min-width: 320px;
 `
 
 export default class Project extends Component {
@@ -66,8 +66,6 @@ export default class Project extends Component {
     } = this.state.inputs
     return (
       <Wrapper>
-        <Headline text="Collective Notebook" />
-
         <InputCard
           startDate={this.state.startDate}
           handleDateChange={this.handleDateChange}

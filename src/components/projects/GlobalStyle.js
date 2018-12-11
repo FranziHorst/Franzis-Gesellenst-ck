@@ -12,7 +12,7 @@ export default createGlobalStyle`
 body {
   align-items: center;
   background-attachment: fixed;
-  background-image: url("../../images/Background-Image2.jpg");
+  background-image: url("../../images/Background-Image.jpg");
   background-size: cover;
   display:flex;
   justify-content: center;

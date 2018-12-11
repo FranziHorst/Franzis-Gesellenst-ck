@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import React, { Component } from 'react'
 
-import Home from './components/projects/Home'
+import CNBIntro from './components/projects/CNBIntro'
 import Project from './components/projects/Project'
 import Navbar from './components/layout/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
@@ -16,13 +16,13 @@ export default class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Switch>
-            {/* <Route exact path="/" render={() => <Home />} /> */}
             <Route path="/project" render={() => <Project />} />
             <Route exact path="/" component={Dashboard} />
             <Route path="/project/:id" component={ProjectDetails} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signup" component={SignUp} />
             <Route path="/create" component={CreateProject} />
+            <Route path="/cnb" render={() => <CNBIntro />} />
           </Switch>
           <Navbar />
         </div>

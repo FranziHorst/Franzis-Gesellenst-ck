@@ -3,6 +3,26 @@ import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
 import { connect } from 'react-redux'
+import styled from 'styled-components'
+
+const Wrapper = styled.nav`
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  background: #262742;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+`
+
+const HomeIcon = styled.img`
+  height: 35px;
+`
+const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 const Navbar = props => {
   const { auth, profile } = props
@@ -14,16 +34,12 @@ const Navbar = props => {
   )
 
   return (
-    <nav className="nav-wrapper grey darken-3">
-      <div className="container">
-        <Link to="/" className="brand-logo">
-          Home
-          {/* <img src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" />
-          <img src="./home2.png" /> */}
-        </Link>
-        {links}
-      </div>
-    </nav>
+    <Wrapper>
+      <StyledLink to="/cnb">
+        <HomeIcon src="./images/home.svg" />
+      </StyledLink>
+      {links}
+    </Wrapper>
   )
 }
 

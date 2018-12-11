@@ -6,8 +6,6 @@ import { Redirect } from 'react-router-dom'
 import moment from 'moment'
 import Project from './Project'
 
-import ToggleButton from './ToggleButton'
-
 const ProjectDetails = props => {
   const { project, auth } = props
   if (!auth.uid) return <Redirect to="/signin" />

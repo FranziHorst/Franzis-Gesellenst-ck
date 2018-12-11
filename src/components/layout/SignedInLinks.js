@@ -2,24 +2,50 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
+import styled from 'styled-components'
+
+const HomeIcon = styled.img`
+  height: 30px;
+`
+const LogoutIcon = styled.img`
+  height: 30px;
+  margin-top: 4px;
+`
+
+const StyledLink = styled(NavLink)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const UserButton = styled(NavLink)`
+  display: inline-block;
+  color: #d566ef;
+  width: 40px;
+  height: 40px;
+  line-height: 31px;
+  padding: 0;
+  border: 3px solid #9014fd;
+  border-radius: 50%;
+  font-size: 14px;
+  font-family: 'Niramit', sans-serif;
+  vertical-align: middle;
+`
 
 const SignedInLinks = props => {
   return (
-    <div>
-      <ul className="right">
-        <li>
-          <NavLink to="/create">New Project</NavLink>
-        </li>
-        <li>
-          <a onClick={props.signOut}>Log Out</a>
-        </li>
-        <li>
-          <NavLink to="/" className="btn btn-floating pink lighten-1">
-            {props.profile.initials}
-          </NavLink>
-        </li>
-      </ul>
-    </div>
+    <React.Fragment>
+      <StyledLink to="/create">
+        <HomeIcon src="./images/project.svg" />
+      </StyledLink>
+
+      <button onClick={props.signOut}>
+        <LogoutIcon src="./images/logout.svg" />
+      </button>
+
+      <div>
+        <UserButton to="/">{props.profile.initials}</UserButton>
+      </div>
+    </React.Fragment>
   )
 }
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 
 export const StyledButton = styled(Button)`
-  background: #33d211 !important;
+  background: #fe6b8b !important;
   border-radius: 12px !important;
   border: 0 !important;
   font-family: 'Niramit', sans-serif !important;
