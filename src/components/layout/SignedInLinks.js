@@ -19,12 +19,13 @@ const StyledLink = styled(NavLink)`
 `
 const UserButton = styled(NavLink)`
   display: inline-block;
-  color: #d566ef;
+  color: #fe6c8b;
   width: 40px;
+  font-weight: 600;
   height: 40px;
   line-height: 31px;
   padding: 0;
-  border: 3px solid #9014fd;
+  border: 3px solid #ffc200;
   border-radius: 50%;
   font-size: 14px;
   font-family: 'Niramit', sans-serif;

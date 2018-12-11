@@ -8,6 +8,7 @@ const Wrapper = styled.section`
   display: grid;
   grid-gap: 20px;
   min-width: 320px;
+  margin-bottom: 50px;
 `
 
 export default class Project extends Component {

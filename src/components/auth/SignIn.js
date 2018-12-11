@@ -10,7 +10,20 @@ const Wrapper = styled.section`
   border-radius: 12px;
   box-shadow: 5px 5px 10px #48484847;
   padding: 0 22px 10px 22px;
-  min-width: 370px;
+  min-width: 330px;
+  margin-bottom: 50px;
+`
+const StyledForm = styled.form`
+  margin: 0;
+`
+const StyledButton = styled.button`
+  background: #fe6c8b;
+  height: 35px;
+  width: 130px;
+  border: 0;
+  color: white;
+  border-radius: 7px;
+  font-family: 'Niramit', sans-serif;
 `
 
 class SignIn extends Component {
@@ -32,7 +45,7 @@ class SignIn extends Component {
     if (auth.uid) return <Redirect to="/" />
     return (
       <Wrapper>
-        <form className="white" onSubmit={this.handleSubmit}>
+        <StyledForm className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Sign In</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
@@ -43,12 +56,12 @@ class SignIn extends Component {
             <input type="password" id="password" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Login</button>
+            <StyledButton>Login</StyledButton>
             <div className="center red-text">
               {authError ? <p>{authError}</p> : null}
             </div>
           </div>
-        </form>
+        </StyledForm>
       </Wrapper>
     )
   }

@@ -18,6 +18,11 @@ body {
   justify-content: center;
   margin: 0;
   padding: 22px;
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  
+}
+
+h5 {
+  font-family: 'Niramit', sans-serif;
 }
 `

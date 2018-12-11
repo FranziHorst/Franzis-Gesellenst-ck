@@ -2,7 +2,28 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createProject } from '../../store/actions/projectActions'
 import { Redirect } from 'react-router-dom'
+import styled from 'styled-components'
 
+const Wrapper = styled.section`
+  background: white;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #48484847;
+  padding: 0 22px 10px 22px;
+  padding-top: 20px;
+`
+const StyledButton = styled.button`
+  background: #fe6c8b;
+  height: 35px;
+  width: 130px;
+  border: 0;
+  color: white;
+  border-radius: 7px;
+  font-family: 'Niramit', sans-serif;
+`
+
+const StyledForm = styled.form`
+  margin: 0;
+`
 class CreateProject extends Component {
   state = {
     title: '',
@@ -23,8 +44,8 @@ class CreateProject extends Component {
     const { auth } = this.props
     if (!auth.uid) return <Redirect to="/signin" />
     return (
-      <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
+      <Wrapper>
+        <StyledForm className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Create a New Project</h5>
           <div className="input-field">
             <input type="text" id="title" onChange={this.handleChange} />
@@ -39,10 +60,10 @@ class CreateProject extends Component {
             <label htmlFor="content">Project Content</label>
           </div>
           <div className="input-field">
-            <button className="btn pink lighten-1">Create</button>
+            <StyledButton>Create</StyledButton>
           </div>
-        </form>
-      </div>
+        </StyledForm>
+      </Wrapper>
     )
   }
 }
