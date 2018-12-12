@@ -6,11 +6,11 @@ import PropTypes from 'prop-types'
 export const StyledTextarea = styled(Textarea)`
   background: white;
   border-radius: 12px;
-  border: 3px solid #ffc200;
-  color: #ff2553;
+  border: 3px solid #ffc100;
+  color: #ff5f8a;
   font-family: 'Niramit', sans-serif;
   font-size: 16px;
-  min-height: 300px;
+  min-height: 280px;
   outline: none;
   padding: 10px;
 

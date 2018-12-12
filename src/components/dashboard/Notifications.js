@@ -9,12 +9,15 @@ const Wrapper = styled.section`
   padding: 0 22px 10px 22px;
   padding-top: 20px;
 `
+const Headline = styled.h2`
+  color: #424242;
+`
 
 const Notifications = props => {
   const { notifications } = props
   return (
     <Wrapper>
-      <span className="card-title">Notifications</span>
+      <Headline>Notifications</Headline>
       <ul className="online-users">
         {notifications &&
           notifications.map(item => {

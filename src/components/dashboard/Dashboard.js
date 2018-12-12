@@ -11,6 +11,8 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
   grid-gap: 20px;
   display: grid;
+  min-width: 330px;
+  margin-bottom: 50px;
 `
 
 class Dashboard extends Component {

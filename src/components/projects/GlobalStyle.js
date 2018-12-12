@@ -25,4 +25,25 @@ body {
 h5 {
   font-family: 'Niramit', sans-serif;
 }
+
+h2 {
+      font-family: 'Niramit', sans-serif;
+      font-size: 18px !important;
+      font-weight: 700;
+      margin: 22px 0;
+    }
+
+p {
+      font-family: 'Niramit', sans-serif;
+      color: #424242;
+    }
+
+    a {
+      color: #ff5f8a;
+    }
+
+    h3 {
+    font-size: 16px;
+    font-weight: 600;
+    }
 `

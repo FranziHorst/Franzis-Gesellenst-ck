@@ -11,7 +11,7 @@ export const Headline1 = styled.h1`
 
 export const HeadlineWrapper = styled.section`
   align-items: center;
-  background: linear-gradient(10deg, #fe6b8b 30%, #ff8e53 85%);
+  background: linear-gradient(10deg, #ff5f8a 37%, #ffc100 85%);
   border-radius: 12px;
   box-shadow: 5px 5px 10px #3333336b;
   display: flex;
