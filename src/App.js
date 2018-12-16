@@ -14,7 +14,7 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <React.Fragment>
           <Switch>
             <Route path="/project" render={() => <Project />} />
             <Route exact path="/" component={Dashboard} />
@@ -25,14 +25,8 @@ export default class App extends Component {
             <Route path="/cnb" render={() => <CNBIntro />} />
           </Switch>
           <Navbar />
-        </div>
+        </React.Fragment>
       </BrowserRouter>
-      // <Router>
-      //   <div>
-      //     <Route exact path="/" render={() => <Home />} />
-      //     <Route path="/project" render={() => <Project />} />
-      //   </div>
-      // </Router>
     )
   }
 }

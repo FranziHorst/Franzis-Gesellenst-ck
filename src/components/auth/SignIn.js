@@ -58,7 +58,7 @@ class SignIn extends Component {
           <div className="input-field">
             <StyledButton>Login</StyledButton>
             <div className="center red-text">
-              {authError ? <p>{authError}</p> : null}
+              {authError && <p>{authError}</p>}
             </div>
           </div>
         </StyledForm>

@@ -68,7 +68,7 @@ class SignUp extends Component {
           <div className="input-field">
             <StyledButton>Sign Up</StyledButton>
             <div className="center red-text">
-              {authError ? <p>{authError}</p> : null}
+              {authError && <p>{authError}</p>}
             </div>
           </div>
         </StyledForm>
